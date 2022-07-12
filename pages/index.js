@@ -1,23 +1,4 @@
-import {
-  background,
-  Box,
-  VStack,
-  Text,
-  Flex,
-  Spacer,
-  Stack,
-  Input,
-  HStack,
-  Select,
-  Radio,
-  RadioGroup,
-  Container,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
-import { useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
+import { Box, Container } from "@chakra-ui/react";
 import Layout from "../components/Layout";
 import styles from "../styles/Home.module.css";
 import HeroSection from "../components/HeroSection";
@@ -25,6 +6,9 @@ import ReviewsSection from "../components/ReviewsSection";
 import OurWork from "../components/OurWorkSection";
 import Banner from "../components/Banner";
 import ServicesSection from "../components/ServicesSection";
+import ServiceAreas from "../components/ServiceAreasSection";
+import Footer from "../components/Footer";
+import MeetTeam from "../components/MeetTeam";
 
 export default function Home() {
   return (
@@ -35,7 +19,7 @@ export default function Home() {
         top={0}
         zIndex={"-1"}
         width={"100%"}
-        height={{ base: "95vh", md: "75vh" }}
+        height={{ base: "95vh", md: "78vh" }}
       >
         <video className={styles.video} autoPlay loop muted>
           <source src={"./drone-vid.mp4"} type="video/mp4" />
@@ -50,6 +34,11 @@ export default function Home() {
       <Container maxW={"1500px"}>
         <ServicesSection />
       </Container>
+      <ServiceAreas />
+      <Container maxW={"1500px"}>
+        <MeetTeam />
+      </Container>
+      <Footer />
     </Layout>
   );
 }

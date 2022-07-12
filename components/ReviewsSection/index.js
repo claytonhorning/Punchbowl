@@ -9,7 +9,7 @@ export default function ReviewsSection() {
       flexWrap={"wrap"}
       gap={8}
       marginX={{ base: 0, md: 15, lg: 20 }}
-      marginY={{ base: 20, md: 8, lg: 10 }}
+      marginY={{ base: 20, md: 8, lg: 12 }}
     >
       <Stack
         bg={"white"}

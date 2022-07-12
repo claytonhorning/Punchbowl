@@ -14,6 +14,7 @@ export default function Banner() {
       bg={"#E3F2FF"}
       height={230}
       fontSize={{ base: 50, md: 70, lg: 80 }}
+      flexWrap={"wrap"}
     >
       <Stack alignItems={"center"}>
         <MdFavorite fontSize={"inherit"} color={"#012D69"} />
@@ -37,6 +38,7 @@ export default function Banner() {
           Fast & Free Estimates
         </Text>
       </Stack>
+
       <Stack alignItems={"center"}>
         <MdTerrain fontSize={"inherit"} color={"#012D69"} />
         <Text
