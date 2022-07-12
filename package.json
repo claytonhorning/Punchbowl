@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "Alpine Pressure Washing",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.2",
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@react-icons/all-files": "^4.1.0",
+    "framer-motion": "^6",
     "next": "12.2.2",
     "react": "18.2.0",
+    "react-compare-slider": "^2.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
