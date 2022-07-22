@@ -1,4 +1,4 @@
-import { Box, Container, Link, Stack, Text } from "@chakra-ui/react";
+import { Box, Container, Link, Stack, Text, Button } from "@chakra-ui/react";
 import Image from "next/image";
 
 const ListHeader = ({ children }) => {
@@ -18,15 +18,24 @@ export default function Footer() {
           justifyContent={"space-between"}
           marginX={{ md: 15, lg: 20 }}
         >
-          <Stack
-            mt={{ base: 8, md: 0 }}
-            spacing={6}
-            alignItems={{ base: "center", md: "left" }}
-          >
-            <Box>
-              <Image src={"/logo.png"} height={60} width={250} />
+          <Stack mt={{ base: 8, md: 0 }} spacing={5}>
+            <Box alignSelf={{ base: "center", md: "flex-start" }}>
+              <Link href="/">
+                <Image src={"/logo-web.png"} height={50} width={300} />
+              </Link>
             </Box>
-            <Text align={{ base: "center", lg: "right" }} fontSize={"sm"}>
+            <Link href="#hero" _hover={{ textDecoration: "none" }}>
+              <Button
+                alignSelf={{ base: "center", md: "flex-start" }}
+                color={"black"}
+                bg={"white"}
+                width={52}
+              >
+                Request a free estimate
+              </Button>{" "}
+            </Link>
+
+            <Text align={{ base: "center", md: "left" }} fontSize={"sm"}>
               © 2022 Alpine Pressure Washing LLC. All rights reserved
             </Text>
           </Stack>

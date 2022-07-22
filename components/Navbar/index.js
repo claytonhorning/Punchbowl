@@ -3,7 +3,6 @@ import {
   Flex,
   Avatar,
   HStack,
-  Link,
   IconButton,
   Button,
   Menu,
@@ -16,21 +15,28 @@ import {
   Stack,
   Text,
   Container,
+  Link,
+  LinkBox,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import {
+  HamburgerIcon,
+  CloseIcon,
+  PhoneIcon,
+  EmailIcon,
+} from "@chakra-ui/icons";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const NavLink = ({ children }) => (
+const NavLink = ({ children, href }) => (
   <Link
     px={2}
     py={1}
     rounded={"md"}
     _hover={{
-      textDecoration: "none",
+      textDecoration: "underline",
       bg: 'useColorModeValue("gray.200", "gray.700")',
     }}
-    href={"#"}
+    href={href}
     color={"white"}
   >
     {children}
@@ -62,40 +68,61 @@ export default function Navbar() {
       <Container maxW={"1500px"}>
         <Box px={4} marginX={{ md: 15, lg: 20 }}>
           <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-            <IconButton
-              size={"md"}
-              color={"white"}
-              icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-              aria-label={"Open Menu"}
-              display={{ md: "none" }}
-              onClick={isOpen ? onClose : onOpen}
-              bg={"transparent"}
-              border={"1.5px solid white"}
-            />
+            <Link display={{ md: "none" }} href="tel:9709874747">
+              <IconButton
+                size={"md"}
+                color={"white"}
+                icon={<PhoneIcon />}
+                aria-label={"Open Menu"}
+                display={{ md: "none" }}
+                bg={"transparent"}
+                border={"1.5px solid white"}
+                _hover={{ color: "black", bgColor: "white" }}
+              />{" "}
+            </Link>
 
-            <Image src={"/logo.png"} height={60} width={250} />
+            <Link href="/">
+              <Image src={"/logo-web.png"} height={50} width={300} />
+            </Link>
+
             <Flex alignItems={"center"}>
-              <HStack
+              <Stack
                 as={"nav"}
-                spacing={4}
+                spacing={10}
                 display={{ base: "none", md: "flex" }}
+                color={"white"}
+                direction={"row"}
               >
-                <NavLink>Home</NavLink>
+                <Stack direction={"row"} alignItems={"center"}>
+                  <EmailIcon />
+                  <Link href="mailto:punchbowlpw@gmail.com">
+                    punchbowlpw@gmail.com
+                  </Link>
+                </Stack>
+                <Stack direction={"row"} alignItems={"center"}>
+                  <PhoneIcon />
+                  <Link href="tel:970-987-4747">970-987-4747</Link>
+                </Stack>
+                {/* <NavLink href={"/"}>Home</NavLink>
                 <Menu>
                   <MenuButton>
                     <NavLink>Services</NavLink>
                   </MenuButton>
                   <MenuList>
-                    <MenuItem>Driveways</MenuItem>
-                    <MenuItem>Decks/Patios</MenuItem>
+                    <MenuItem>
+                      <Link href="/services/driveways">Driveways</Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link href="/services/decks-patios">Decks/Patios</Link>
+                    </MenuItem>
                     <MenuItem>Garages</MenuItem>
                     <MenuItem>Roofs & Gutters</MenuItem>
                     <MenuItem>Houses/Siding</MenuItem>
                   </MenuList>
                 </Menu>
                 <NavLink>About</NavLink>
-                <NavLink>Contact</NavLink>
-              </HStack>
+                <NavLink>Contact</NavLink> */}
+              </Stack>
             </Flex>
           </Flex>
 

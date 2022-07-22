@@ -9,7 +9,7 @@ export default function Layout({ title, children }) {
       <CustomHead title={title} />
       <Navbar />
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
