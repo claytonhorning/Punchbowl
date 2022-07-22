@@ -18,7 +18,7 @@ export default function Home() {
         top={0}
         zIndex={"-1"}
         width={"100%"}
-        height={{ base: "102vh", md: "78vh" }}
+        height={{ base: "103vh", md: "78vh" }}
       >
         <video className={styles.video} autoPlay loop muted>
           <source src={"./drone-vid.mp4"} type="video/mp4" />

@@ -4,7 +4,11 @@ import Image from "next/image";
 
 export default function MeetTeam() {
   return (
-    <Box marginX={{ base: 0, md: 15, lg: 20 }} marginY={{ base: 20 }}>
+    <Box
+      marginX={{ base: 0, md: 15, lg: 20 }}
+      marginBottom={{ base: 20 }}
+      marginTop={10}
+    >
       <Text fontWeight={"700"} align={"center"} fontSize={"4xl"}>
         Our Team
       </Text>

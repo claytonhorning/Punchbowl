@@ -19,7 +19,7 @@ export default function ServiceAreas() {
           direction={"row"}
           justifyContent={"center"}
           color={"#0087DB"}
-          width={{ base: "400px", md: "700px" }}
+          width={{ base: "320px", sm: "400px", md: "700px" }}
           flexWrap={"wrap"}
           spacing={10}
           mb={8}
@@ -122,15 +122,6 @@ export default function ServiceAreas() {
             display={"list-item"}
           >
             Eagle
-          </Text>
-          <Text
-            _hover={{
-              textDecoration: "underline",
-              cursor: "pointer",
-            }}
-            display={"list-item"}
-          >
-            Edwards
           </Text>
         </Stack>
       </Flex>
