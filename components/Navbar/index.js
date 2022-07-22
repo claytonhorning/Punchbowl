@@ -66,7 +66,7 @@ export default function Navbar() {
       bg={colorChange ? "rgba(0,0,0,.9)" : "transparent"}
     >
       <Container maxW={"1500px"}>
-        <Box px={4} marginX={{ md: 15, lg: 20 }}>
+        <Box marginX={{ base: 0, sm: 5, md: 15, lg: 20 }}>
           <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
             <Link display={{ md: "none" }} href="tel:9709874747">
               <IconButton

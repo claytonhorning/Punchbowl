@@ -5,7 +5,7 @@ export default function OurWork() {
   return (
     <Box
       marginX={{ base: 0, md: 15, lg: 20 }}
-      marginTop={{ base: -10, md: 8, lg: 10 }}
+      marginTop={{ base: 16, md: 10, lg: 10 }}
       marginBottom={{ base: 16 }}
     >
       <Text fontWeight={"700"} align={"center"} fontSize={"4xl"}>
