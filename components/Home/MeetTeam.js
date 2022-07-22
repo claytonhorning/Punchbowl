@@ -25,10 +25,10 @@ export default function MeetTeam() {
             align={{ base: "center", md: "left" }}
             width={{ base: "100%", md: 320, lg: 420, xl: 480 }}
           >
-            I'm Jorge, a jack of all trades and a car enthusiast. I've been
-            living in the Roaring Fork Valley for 20+ years and have built a
-            reputation doing property management. I enjoy taking ownership of a
-            task and completing it to the best of my ability. Pressure Washing
+            I&apos;m Jorge, a jack of all trades and a car enthusiast. I&apos;ve
+            been living in the Roaring Fork Valley for 20+ years and have built
+            a reputation doing property management. I enjoy taking ownership of
+            a task and completing it to the best of my ability. Pressure Washing
             is one of the best ways to improve the look and feel of your home
             and I enjoy delivering great results to our clients.
           </Text>
@@ -44,7 +44,7 @@ export default function MeetTeam() {
             align={{ base: "center", md: "left" }}
             width={{ base: "100%", md: 320, lg: 420, xl: 480 }}
           >
-            I'm Clayton, a recent business graduate of the University of
+            I&apos;m Clayton, a recent business graduate of the University of
             Colorado Boulder. After I graduated, I realized that I missed
             working outside in the Roaring Fork Valley so I moved back and
             started Punchbowl Pressure Washing with my former co-worker Jorge. I

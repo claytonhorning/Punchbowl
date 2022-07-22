@@ -6,10 +6,10 @@ export default function ServicesSection() {
   const driveways = (
     <span>
       Pressure washing your driveway is a great way to spruce up your property
-      and improve your home's curb appeal. It can also drastically increase the
-      value of your home for a potential buyer. If your driveway goes uncared
-      for, it can grow algae, mold, moss and mildew which can lead to it needing
-      to be repaired down the road. <br />
+      and improve your home&apos;s curb appeal. It can also drastically increase
+      the value of your home for a potential buyer. If your driveway goes
+      uncared for, it can grow algae, mold, moss and mildew which can lead to it
+      needing to be repaired down the road. <br />
       <br />A driveway is something you use everyday and the first thing you see
       when you pull up to your house, so you might as well take care of it.
       Punchbowl Pressure Washing will make your driveway look brand-spanking-new
@@ -56,8 +56,8 @@ export default function ServicesSection() {
   );
   const siding = (
     <span>
-      Pressure washing your house and siding can do wonders for your home's curb
-      appeal and increase the value for a potential buyer. If it has been a
+      Pressure washing your house and siding can do wonders for your home&apos;s
+      curb appeal and increase the value for a potential buyer. If it has been a
       while since you last pressure washed your house, there are likely years of
       accumulated dirt and grime covering that beautiful paint job.
       <br />
@@ -70,10 +70,10 @@ export default function ServicesSection() {
   );
   const vehicles = (
     <span>
-      Whether you're four wheeling up a mountain to go camping or just commuting
-      to work, your car is guaranteed to get dirty living in the Roaring Fork
-      Valley. The outside is caked with mud and magnesium chloride while the
-      inside is filled with dog hair and old snacks. <br />
+      Whether you&apos;re four wheeling up a mountain to go camping or just
+      commuting to work, your car is guaranteed to get dirty living in the
+      Roaring Fork Valley. The outside is caked with mud and magnesium chloride
+      while the inside is filled with dog hair and old snacks. <br />
       <br />
       Punchbowl Pressure Washing offers services for personal vehicles as well
       as a fleet of company vehicles/equipment. We will come to the site have
