@@ -20,8 +20,8 @@ export default function OurWork() {
       >
         <GridItem>
           <SliderImage
-            before={"./patio-before.jpg"}
-            after={"./patio-after.jpg"}
+            before={"./patio-before.JPG"}
+            after={"./patio-after.JPG"}
           />
           <Text mt={2} fontWeight={500} fontSize={"xl"}>
             Patio in Glenwood Springs, CO
