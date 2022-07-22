@@ -21,7 +21,7 @@ export default function MeetTeam() {
         <Stack alignItems={"center"}>
           <Box width={300} minHeight={400} position={"relative"}>
             <Image
-              src={"/team/jorge-headshot.jpg"}
+              src={"/team/jorge-headshot.JPG"}
               layout="fill"
               objectFit="cover"
             />
@@ -44,7 +44,7 @@ export default function MeetTeam() {
         <Stack alignItems={"center"}>
           <Box width={300} minHeight={400} position={"relative"}>
             <Image
-              src={"/team/clayton-headshot.jpg"}
+              src={"/team/clayton-headshot.JPG"}
               layout="fill"
               objectFit="cover"
             />
