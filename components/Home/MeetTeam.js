@@ -20,7 +20,11 @@ export default function MeetTeam() {
       >
         <Stack alignItems={"center"}>
           <Box width={300} minHeight={400} position={"relative"}>
-            <Image src={"/alexander.jpg"} layout="fill" objectFit="cover" />
+            <Image
+              src={"/team/jorge-headshot.jpg"}
+              layout="fill"
+              objectFit="cover"
+            />
           </Box>
           <Text pt={4} fontWeight={500} fontSize={"3xl"}>
             Jorge Sandoval
@@ -39,7 +43,11 @@ export default function MeetTeam() {
         </Stack>
         <Stack alignItems={"center"}>
           <Box width={300} minHeight={400} position={"relative"}>
-            <Image src={"/alexander.jpg"} layout="fill" objectFit="cover" />
+            <Image
+              src={"/team/clayton-headshot.jpg"}
+              layout="fill"
+              objectFit="cover"
+            />
           </Box>
           <Text pt={4} fontWeight={500} fontSize={"3xl"}>
             Clayton Horning
