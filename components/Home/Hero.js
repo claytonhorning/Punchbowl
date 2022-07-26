@@ -14,6 +14,7 @@ import {
   Button,
   FormControl,
   FormLabel,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { database } from "../../firebaseConfig";
@@ -124,7 +125,7 @@ export default function HeroSection() {
   return (
     <Stack
       direction={{ base: "column", md: "row" }}
-      height={{ base: "90vh", md: "70vh" }}
+      height={{ base: "98vh", sm: "90vh", md: "70vh" }}
       alignItems={{ md: "center" }}
       marginX={{ base: 0, sm: 10, md: 15, lg: 20 }}
       color={"white"}
@@ -152,8 +153,9 @@ export default function HeroSection() {
       <Box
         borderRadius={"5"}
         bgColor={"white"}
-        width={{ xl: "380px" }}
+        width={{ base: "90%", sm: "350px", md: "390px" }}
         color={"black"}
+        alignSelf={"center"}
         style={{ boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px" }}
       >
         <Box
@@ -233,7 +235,15 @@ export default function HeroSection() {
           </Text>
           <Stack>
             <CheckboxGroup>
-              <Stack direction="row">
+              <SimpleGrid
+                templateColumns={{
+                  base: "repeat(2, 1fr)",
+                  sm: "repeat(3, 1fr)",
+                  md: "repeat(4,1fr)",
+                }}
+                rowGap={1}
+                columnGap={2}
+              >
                 <Checkbox
                   onChange={() =>
                     setInputs((prevState) => ({
@@ -264,8 +274,6 @@ export default function HeroSection() {
                 >
                   Garage
                 </Checkbox>
-              </Stack>
-              <Stack mt={2} direction="row">
                 <Checkbox
                   onChange={() =>
                     setInputs((prevState) => ({
@@ -306,7 +314,7 @@ export default function HeroSection() {
                 >
                   Vehicles
                 </Checkbox>
-              </Stack>
+              </SimpleGrid>
             </CheckboxGroup>
           </Stack>
           <Box
