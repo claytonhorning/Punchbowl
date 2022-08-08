@@ -98,6 +98,7 @@ export default function HeroSection() {
           setSuccess("Form submitted successfully.");
         })
         .catch((error) => {
+          console.log(error.message);
           handleError(error.message, "server");
         });
 
