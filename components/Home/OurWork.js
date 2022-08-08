@@ -29,29 +29,38 @@ export default function OurWork() {
         </GridItem>
         <GridItem>
           <SliderImage
-            before={"./coming-soon.jpg"}
-            after={"./coming-soon.jpg"}
+            before={"./gator_before.JPG"}
+            after={"./gator_after.JPG"}
           />
           <Text mt={2} fontWeight={500} fontSize={"xl"}>
-            Driveway in Carbondale, CO
+            Gator in Missouri Heights , CO
           </Text>
         </GridItem>
         <GridItem>
           <SliderImage
-            before={"./coming-soon.jpg"}
-            after={"./coming-soon.jpg"}
+            before={"./fj_engine_before.jpeg"}
+            after={"./fj_engine_after.jpeg"}
           />
           <Text mt={2} fontWeight={500} fontSize={"xl"}>
-            Roof in New Castle, CO
+            Engine Bay in Carbondale, CO
           </Text>
         </GridItem>
-        <GridItem>
+        {/* <GridItem>
           <SliderImage
-            before={"./coming-soon.jpg"}
-            after={"./coming-soon.jpg"}
+            before={"./gator_2_before.JPG"}
+            after={"./gator_2_after.JPG"}
           />
           <Text mt={2} fontWeight={500} fontSize={"xl"}>
             Deck in Glenwood Springs, CO
+          </Text>
+        </GridItem> */}
+        <GridItem>
+          <SliderImage
+            before={"./window_before.JPG"}
+            after={"./window_after.JPG"}
+          />
+          <Text mt={2} fontWeight={500} fontSize={"xl"}>
+            Windows in Carbondale, CO
           </Text>
         </GridItem>
       </Grid>
