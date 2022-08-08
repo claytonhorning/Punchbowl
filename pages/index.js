@@ -21,7 +21,7 @@ export default function Home() {
         height={{ base: "110vh", sm: "103vh", md: "78vh" }}
       >
         <video className={styles.video} autoPlay loop muted>
-          <source src={"./drone-vid.mp4"} type="video/mp4" />
+          <source src={"./video.mp4"} type="video/mp4" />
         </video>
       </Box>
       <Container maxW={"1500px"}>

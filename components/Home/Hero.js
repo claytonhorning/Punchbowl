@@ -92,41 +92,8 @@ export default function HeroSection() {
   const submit = async () => {
     if (validate()) {
       const estimatesRef = collection(database, "estimates");
-
-      await addDoc(estimatesRef, {
-        ...inputs,
-        to: "punchbowlpw@gmail.com",
-        message: {
-          subject: `New form submission from ${inputs.name}`,
-          html: `
-          Address: ${inputs.street} ${inputs.city}, ${inputs.state} <br><br> 
-          Email: ${inputs.email} <br><br> 
-          Services: 
-          <ul>
-            <li>
-              Driveway - ${inputs.driveway} 
-            </li>
-            <li>
-              Deck/Patio - ${inputs.deckPatio} 
-            </li>
-            <li>
-              Garage - ${inputs.garage}
-            </li>
-            <li>
-             Gutters - ${inputs.gutters}
-            </li>
-            <li>
-              Roof - ${inputs.roof}
-            </li>
-            <li>
-              Siding - ${inputs.siding}
-            </li>
-           <li>
-              Vehicles - ${inputs.vehicles} 
-           </li>
-          </ul>`,
-        },
-      })
+      console.log(inputs);
+      await addDoc(estimatesRef, { ...inputs })
         .then((res) => {
           setSuccess("Form submitted successfully.");
         })
@@ -232,7 +199,7 @@ export default function HeroSection() {
               isInvalid={errors.state}
               value={inputs.state}
             >
-              <option value="Colorado">Colorado</option>
+              <option value="colorado">Colorado</option>
             </Select>
             <Select
               name="city"
