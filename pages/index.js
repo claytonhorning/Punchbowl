@@ -24,7 +24,6 @@ export default function Home() {
           className={styles.video}
           autoplay="autoplay"
           loop="loop"
-          muted
           defaultMuted
           playsInline
         >
