@@ -125,7 +125,7 @@ export default function HeroSection() {
   return (
     <Stack
       direction={{ base: "column", md: "row" }}
-      height={{ base: "98vh", sm: "90vh", md: "70vh" }}
+      height={{ base: "125vh", xs: "105vh", sm: "90vh", md: "70vh" }}
       alignItems={{ md: "center" }}
       marginX={{ base: 0, sm: 10, md: 15, lg: 20 }}
       color={"white"}

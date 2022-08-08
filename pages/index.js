@@ -18,7 +18,7 @@ export default function Home() {
         top={0}
         zIndex={"-1"}
         width={"100%"}
-        height={{ base: "110vh", sm: "103vh", md: "78vh" }}
+        height={{ base: "140vh", xs: "130vh", sm: "103vh", md: "78vh" }}
       >
         <video className={styles.video} autoPlay loop muted>
           <source src={"./video.mp4"} type="video/mp4" />
