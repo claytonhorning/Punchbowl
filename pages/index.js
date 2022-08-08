@@ -20,7 +20,14 @@ export default function Home() {
         width={"100%"}
         height={{ base: "140vh", xs: "130vh", sm: "103vh", md: "78vh" }}
       >
-        <video className={styles.video} autoPlay loop muted>
+        <video
+          className={styles.video}
+          autoplay="autoplay"
+          loop="loop"
+          muted
+          defaultMuted
+          playsInline
+        >
           <source src={"./video.mp4"} type="video/mp4" />
         </video>
       </Box>
