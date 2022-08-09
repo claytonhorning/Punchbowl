@@ -24,11 +24,7 @@ export default function CustomHead({ title }) {
         <meta property="og:image" content="/og-image.png" />
       </Head>
 
-      <div id="fb-root"></div>
-
-      <div id="fb-customer-chat" className="fb-customerchat"></div>
-
-      <Script>
+      <Script id="fb-root">
         {`
        var chatbox = document.getElementById('fb-customer-chat');
       chatbox.setAttribute("page_id", "111088115036607");
@@ -36,7 +32,7 @@ export default function CustomHead({ title }) {
       `}
       </Script>
 
-      <Script>
+      <Script id="fb-customer-chat" className="fb-customerchat">
         {`
       window.fbAsyncInit = function() {
         FB.init({
