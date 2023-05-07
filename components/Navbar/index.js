@@ -67,8 +67,15 @@ export default function Navbar() {
     >
       <Container maxW={"1500px"}>
         <Box marginX={{ base: 0, sm: 5, md: 15, lg: 20 }}>
-          <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-            <Link display={{ md: "none" }} href="tel:9709874747">
+          <Flex
+            h={16}
+            alignItems={"center"}
+            justifyContent={"space-between"}
+          >
+            <Link
+              display={{ md: "none" }}
+              href="tel:9702350413"
+            >
               <IconButton
                 size={"md"}
                 color={"white"}
@@ -77,12 +84,19 @@ export default function Navbar() {
                 display={{ md: "none" }}
                 bg={"transparent"}
                 border={"1.5px solid white"}
-                _hover={{ color: "black", bgColor: "white" }}
+                _hover={{
+                  color: "black",
+                  bgColor: "white",
+                }}
               />{" "}
             </Link>
 
             <Link href="/">
-              <Image src={"/logo-web.png"} height={50} width={300} />
+              <Image
+                src={"/logo-web.png"}
+                height={50}
+                width={300}
+              />
             </Link>
 
             <Flex alignItems={"center"}>
@@ -93,15 +107,23 @@ export default function Navbar() {
                 color={"white"}
                 direction={"row"}
               >
-                <Stack direction={"row"} alignItems={"center"}>
+                <Stack
+                  direction={"row"}
+                  alignItems={"center"}
+                >
                   <EmailIcon />
                   <Link href="mailto:punchbowlpw@gmail.com">
                     punchbowlpw@gmail.com
                   </Link>
                 </Stack>
-                <Stack direction={"row"} alignItems={"center"}>
+                <Stack
+                  direction={"row"}
+                  alignItems={"center"}
+                >
                   <PhoneIcon />
-                  <Link href="tel:970-987-4747">970-987-4747</Link>
+                  <Link href="tel:9702350413">
+                    (970) 235-0413
+                  </Link>
                 </Stack>
                 {/* <NavLink href={"/"}>Home</NavLink>
                 <Menu>
@@ -127,7 +149,11 @@ export default function Navbar() {
           </Flex>
 
           {isOpen ? (
-            <Box bg={"white"} pb={4} display={{ md: "none" }}>
+            <Box
+              bg={"white"}
+              pb={4}
+              display={{ md: "none" }}
+            >
               <Stack as={"nav"} spacing={4}>
                 <NavLink>Home</NavLink>
                 <Menu>

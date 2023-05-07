@@ -8,8 +8,18 @@ export default function SliderImage({ before, after }) {
   return (
     <Box>
       <ReactCompareSlider
-        itemOne={<ReactCompareSliderImage src={before} alt="Image one" />}
-        itemTwo={<ReactCompareSliderImage src={after} alt="Image two" />}
+        itemOne={
+          <ReactCompareSliderImage
+            src={before}
+            alt="Image one"
+          />
+        }
+        itemTwo={
+          <ReactCompareSliderImage
+            src={after}
+            alt="Image two"
+          />
+        }
       />
     </Box>
   );
