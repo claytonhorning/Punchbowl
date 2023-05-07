@@ -81,7 +81,7 @@ export default function OurWork() {
             after={"./Rocks1-After.jpeg"}
           />
           <Text mt={2} fontWeight={500} fontSize={"xl"}>
-            Patio in Carbondale, CO
+            Patio in Snowmass, CO
           </Text>
         </GridItem>
         {/* <GridItem>
